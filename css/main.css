@@ -16,6 +16,11 @@ body {
     align-items: flex-end;
 }
 
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
 .col1 {
     width: 20%;
     align-self: flex-end;
@@ -123,9 +128,15 @@ footer a:hover {
 }
 
 @media screen and (max-width: 500px) {
+    .header-container {
+        display: flex;
+        flex-direction: column;
+}
+    
     .col1 {
-        width: 0;
-        visibility:hidden;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
     
     .col2 {
