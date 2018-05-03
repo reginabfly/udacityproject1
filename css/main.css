@@ -1,0 +1,148 @@
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    margin: 20px auto 0;
+    width: 100%;
+}
+
+/*HEADER*/
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 80%;
+    height: 100%;
+    color: lightgray;
+    align-items: flex-end;
+}
+
+.col1 {
+    width: 20%;
+    align-self: flex-end;
+}
+
+.col2 {
+    text-align: right;
+    margin: 0;
+    padding: 10px;
+    width: 60%;
+}
+
+.name {
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+
+h4 {
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+
+/*BREAK AND MAIN IMAGE*/
+
+hr {
+    max-width: 80%;
+    margin-top: 10px;
+    padding-top: 0;
+}
+
+.hero-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    border: 2px solid gray;
+}
+
+/* FEATURED WORK */
+
+.featured-work {
+    margin: 0 auto;
+    max-width: 80%;
+    color: lightslategray;
+}
+
+.container-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.portfolio-piece {
+    flex: 1 1 calc(33.33% - 20px);
+    margin: 10px;
+    text-align: center;
+    color: lightslategray;
+}
+
+.portfolio-img {
+    width: 100%;
+    border: 2px solid gray;
+}
+
+.portfolio-header {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+}
+
+/*FOOTER*/
+
+footer {
+    margin: 20px;
+    text-align: center;
+    color: lightslategray;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightslategray;
+    font-size: 1.5em;
+}
+
+footer a:hover {
+    text-decoration: underline;   
+}
+
+/*MEDIA QUERIES */
+
+@media screen and (max-width: 850px) {
+    .col1 {
+        width: 20%;
+    }
+
+    .col2 {
+        width: 60%;
+    }
+    
+    .container-work {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .col1 {
+        width: 0;
+        visibility:hidden;
+    }
+    
+    .col2 {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    h1, 
+    h4 {
+        margin: 0;
+        padding: 5px;
+    }
+    
+    hr {
+        margin: 10px auto;
+        width: 100%;
+        padding: 0px;
+    }
+}
